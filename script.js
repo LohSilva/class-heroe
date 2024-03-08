@@ -1,5 +1,5 @@
 //Criando a classe de heróis
-class heroe {
+class heroi {
     constructor(nome, idade, tipo) {
         this.nome = nome;
         this.idade = idade;
