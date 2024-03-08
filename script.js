@@ -24,6 +24,7 @@ class heroi {
 
 }
 
-//Saída
+//Instanciando objeto
 let ataque = new heroe("Luna", 20, "mago");
+//Saída
 ataque.atacar();
