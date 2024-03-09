@@ -16,7 +16,7 @@
 - **idade:** Armazena a idade do herói.
 - **tipo:** Armazen o tipo do herói (guerreiro, mago, monge, ninja).
 
-### Método | Funções:
+### Função:
 - **atacar():** Exibe uma mensagem formatada com o tipo e ataque do herói, de acordo com a seguinte tabela:
 
 |Tipo|	Ataque|
