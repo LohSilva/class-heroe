@@ -2,12 +2,21 @@
 
 **Objetivo:** Implementar uma classe, na linguagem de programação que desejar, que represente um herói de aventura.
 
-### Propriedades:
+**O que pode ser usado:** 
+
+- Variáveis 
+- Operadores 
+- Laços de repetição 
+- Estruturas de decisões 
+- Funções 
+- Classes e Objetos 
+
+### Variáveis:
 - **nome:** Armazena o nome do herói.
 - **idade:** Armazena a idade do herói.
 - **tipo:** Armazen o tipo do herói (guerreiro, mago, monge, ninja).
 
-### Método:
+### Método | Funções:
 - **atacar():** Exibe uma mensagem formatada com o tipo e ataque do herói, de acordo com a seguinte tabela:
 
 |Tipo|	Ataque|
@@ -19,10 +28,10 @@
 
 ## ⚙️Implementação:
 
-- A classe `heroi` define as propriedades `nome`, `idade` e `tipo` como privadas.
+- A classe `heroi` define as variáveis `nome`, `idade` e `tipo` como privadas.
 - O método `atacar()` utiliza um Array para armazenar o ataque correto de acordo com o tipo do herói.
-- Utiliza `find ()` para buscar o primeiro elemento que satisfaz a condição solicitada.
-- Criação de instâncias da classe `heroi` para diferentes tipos de heróis e poder chamar o método `atacar()` para cada um.
+- O método `find ()` retorna o primeiro elemento que satisfaz a condição solicitada.
+- Instanciação de objetos a partir da classe `heroi` para diferentes tipos de heróis e poder chamar o método `atacar()` para cada um.
 
 ## 🥷Desafio:
 
