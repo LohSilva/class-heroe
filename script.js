@@ -1,4 +1,4 @@
-//Criando a classe de heróis
+//Classe que representa um heroi em um jogo
 class heroi {
     constructor(nome, idade, tipo) {
         this.nome = nome;
@@ -7,24 +7,30 @@ class heroi {
     }
     //Metodo para ação de atacar
     atacar() {
-        //Declarando variável para guardar tipo de ataque de cada herói
-        let tipoDeAtaque = ["magia", "espada", "artes marciais", "shuriken"]
-
-        if (this.tipo === "mago") {
-            console.log(`O tipo ${this.tipo} ataca usando ${tipoDeAtaque[0]}`);
-        } else if (this.tipo === "guerreiro") {
-            console.log(`O tipo ${this.tipo} ataca usando ${tipoDeAtaque[1]}`);
-        } else if (this.tipo === "monge") {
-            console.log(`O tipo ${this.tipo} ataca usando ${tipoDeAtaque[2]}`);
-        } else {
-            console.log(`O tipo ${this.tipo} ataca usando ${tipoDeAtaque[3]}`);
-        }
+        // Array que armazena os tipos de ataque para cada tipo de herói
+        const tiposDeAtaque = [
+            { tipo: "mago", ataque: "magia" },
+            { tipo: "guerreiro", ataque: "espada" },
+            { tipo: "monge", ataque: "artes marciais" },
+            { tipo: "ninja", ataque: "shuriken" },
+        ];
+        // Encontra o tipo de ataque para o tipo de herói atual
+        const tipoDeAtaque = tiposDeAtaque.find((ataque) => ataque.tipo === this.tipo);
+        // Exibe a mensagem de ataque formatada
+        console.log(`O tipo ${this.tipo} ataca usando ${tipoDeAtaque.ataque}`);
 
     }
 
 }
 
 //Instanciando objeto
-let ataque = new heroe("Luna", 20, "mago");
-//Saída
-ataque.atacar();
+const mago = new heroi("Gandalf", 100, "mago");
+const guerreiro = new heroi("Bjorn", 75, "guerreiro");
+const monge = new heroi("Benkei", 65, "monge");
+const ninja = new heroi("Naruto", 15, "ninja");
+
+// Chamando o método atacar para cada herói
+mago.atacar();
+guerreiro.atacar();
+monge.atacar();
+ninja.atacar();
